@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Dr. Shupta Das · AI Researcher & Engineer</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts: Inter + Space Grotesk -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      scroll-behavior: smooth;
+      background: #fafaff;
+    }
+    h1, h2, h3, .font-display, .research-title {
+      font-family: 'Space Grotesk', 'Inter', sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #c026d3 100%);
+    }
+    .research-card {
+      transition: all 0.25s ease;
+    }
+    .research-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 30px -12px rgba(79, 70, 229, 0.2);
+    }
+    .hover-glow:hover {
+      box-shadow: 0 8px 20px -6px rgba(124, 58, 237, 0.25);
+    }
+    ::selection {
+      background: #7c3aed;
+      color: white;
+    }
+    .hero-pattern {
+      background-image: radial-gradient(circle at 10% 20%, rgba(79, 70, 229, 0.03) 0%, transparent 60%);
+    }
+  </style>
+</head>
+<body class="text-gray-800 antialiased hero-pattern">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-30 bg-white/90 backdrop-blur-md border-b border-indigo-100/60 shadow-sm">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-3 flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-xl gradient-bg flex items-center justify-center shadow-md">
+          <span class="text-white text-sm font-bold">SD</span>
+        </div>
+        <span class="font-bold text-xl tracking-tight bg-gradient-to-r from-indigo-700 to-purple-700 bg-clip-text text-transparent">Shupta Das</span>
+      </div>
+      <div class="flex gap-6 text-sm font-medium text-gray-600">
+        <a href="#research" class="hover:text-indigo-600 transition border-b-2 border-indigo-500 pb-0.5 text-indigo-700 font-semibold">Research</a>
+        <a href="#experience" class="hover:text-indigo-600 transition">Engineering</a>
+        <a href="#projects" class="hover:text-indigo-600 transition">Projects</a>
+        <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-5 sm:px-8 py-8 md:py-12">
+    
+    <!-- Hero Section with Research Focus -->
+    <div class="flex flex-col lg:flex-row justify-between gap-12 items-start mb-16">
+      <div class="flex-1 space-y-5">
+        <div class="inline-flex items-center gap-2 bg-indigo-100/60 rounded-full px-4 py-1.5 text-indigo-800 text-sm font-medium border border-indigo-200">
+          <i data-lucide="brain-circuit" class="w-4 h-4"></i>
+          <span>Epilepsy AI Researcher | 99.8% Seizure Detection Accuracy</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.2]">
+          <span class="text-gray-900">Shupta Das</span><br/>
+          <span class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">AI & Biomedical Researcher</span>
+        </h1>
+        <p class="text-lg text-gray-600 max-w-2xl leading-relaxed">
+          Specializing in <span class="font-semibold text-indigo-700">EEG signal decomposition, CNN-based seizure detection, and real-world clinical AI</span>. 
+          Author of 4+ peer-reviewed publications. Senior engineer building scalable systems, but research remains at my core.
+        </p>
+        <!-- Research Social Links -->
+        <div class="flex flex-wrap gap-3 pt-2">
+          <a href="https://scholar.google.com/citations?user=0chVO5gAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="bg-indigo-50 hover:bg-indigo-100 text-indigo-800 border border-indigo-200 px-5 py-2.5 rounded-xl transition text-sm font-medium flex items-center gap-2">
+            <i data-lucide="graduation-cap" class="w-4 h-4"></i> Google Scholar
+          </a>
+          <a href="https://www.researchgate.net/profile/Shupta-Das" target="_blank" rel="noopener noreferrer" class="bg-teal-50 hover:bg-teal-100 text-teal-700 border border-teal-200 px-5 py-2.5 rounded-xl transition text-sm font-medium flex items-center gap-2">
+            <i data-lucide="book-open" class="w-4 h-4"></i> ResearchGate
+          </a>
+          <a href="https://github.com/Shupta-das" target="_blank" rel="noopener noreferrer" class="bg-gray-900 text-white hover:bg-gray-800 px-5 py-2.5 rounded-xl transition shadow-sm text-sm font-medium flex items-center gap-2">
+            <i data-lucide="github" class="w-4 h-4"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/shupta-das" target="_blank" rel="noopener noreferrer" class="bg-sky-50 hover:bg-sky-100 text-sky-700 border border-sky-200 px-5 py-2.5 rounded-xl transition text-sm font-medium flex items-center gap-2">
+            <i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+      <!-- Research impact cards -->
+      <div class="flex gap-4 w-full lg:w-auto">
+        <div class="bg-white rounded-2xl p-5 shadow-md border border-indigo-100 w-36 text-center hover:shadow-indigo-100/40 transition">
+          <i data-lucide="award" class="w-7 h-7 text-indigo-500 mx-auto mb-2"></i>
+          <div class="font-black text-2xl">99.8%</div>
+          <div class="text-xs text-gray-500">Seizure detection (benchmark)</div>
+        </div>
+        <div class="bg-white rounded-2xl p-5 shadow-md border border-purple-100 w-36 text-center">
+          <i data-lucide="file-text" class="w-7 h-7 text-purple-500 mx-auto mb-2"></i>
+          <div class="font-black text-2xl">4+</div>
+          <div class="text-xs text-gray-500">Peer-reviewed papers</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESEARCH HIGHLIGHT SECTION (expanded, prominent) -->
+    <div id="research" class="mb-24 scroll-mt-20">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="gradient-bg w-10 h-10 rounded-xl flex items-center justify-center shadow-sm">
+          <i data-lucide="microscope" class="w-5 h-5 text-white"></i>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight bg-gradient-to-r from-indigo-800 to-purple-800 bg-clip-text text-transparent">Research Spotlight</h2>
+        <div class="h-px flex-1 bg-gradient-to-r from-indigo-300 to-transparent"></div>
+      </div>
+
+      <!-- Main research card with details -->
+      <div class="grid lg:grid-cols-3 gap-7">
+        <div class="lg:col-span-2 bg-white rounded-2xl border border-indigo-100 shadow-xl overflow-hidden research-card">
+          <div class="gradient-bg px-6 py-3">
+            <h3 class="text-xl font-bold text-white flex items-center gap-2"><i data-lucide="brain" class="w-5 h-5"></i> Epileptic Seizure Detection using EMD & Deep Learning</h3>
+          </div>
+          <div class="p-6 space-y-4">
+            <p class="text-gray-700"><span class="font-semibold">Undergraduate Research · Khulna University of Engineering & Technology</span> (Supervised by Dr. M. A. H. Akhand)</p>
+            <div class="grid sm:grid-cols-2 gap-4 text-sm">
+              <div class="bg-indigo-50/40 p-4 rounded-xl">
+                <span class="font-bold text-indigo-800">📊 99.78% accuracy</span>
+                <p class="text-gray-600 text-xs mt-1">on CHB-MIT benchmark dataset (1D/2D CNN + EMD)</p>
+              </div>
+              <div class="bg-purple-50/40 p-4 rounded-xl">
+                <span class="font-bold text-purple-800">🏥 95.26% accuracy</span>
+                <p class="text-gray-600 text-xs mt-1">on real hospital EEG data (Khulna, Bangladesh)</p>
+              </div>
+              <div class="bg-teal-50/40 p-4 rounded-xl">
+                <span class="font-bold text-teal-800">🌏 91.05% real-world</span>
+                <p class="text-gray-600 text-xs mt-1">Bangladesh perspective — clinical applicability</p>
+              </div>
+              <div class="bg-amber-50/40 p-4 rounded-xl">
+                <span class="font-bold text-amber-800">🏆 99.80% integrated features</span>
+                <p class="text-gray-600 text-xs mt-1">Fluctuation index + variance + ellipse area</p>
+              </div>
+            </div>
+            <div class="pt-2">
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1.5 rounded-full">Empirical Mode Decomposition</span>
+                <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1.5 rounded-full">CNN (1D & 2D)</span>
+                <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1.5 rounded-full">Feature Engineering</span>
+                <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1.5 rounded-full">Real-world EEG variability</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Publications list (Research output) -->
+        <div class="bg-white rounded-2xl border border-gray-200 p-5 shadow-md">
+          <div class="flex items-center gap-2 mb-4">
+            <i data-lucide="book-marked" class="w-5 h-5 text-indigo-500"></i>
+            <h3 class="font-bold text-lg">Key Publications</h3>
+          </div>
+          <div class="space-y-4 text-sm">
+            <div><span class="font-semibold">📄 Information, 2024</span><br/>"Epileptic Seizure Detection from Decomposed EEG Signal through 1D and 2D Feature Representation and CNN"</div>
+            <div><span class="font-semibold">📘 Journal of Computer Science, 2024</span><br/>"Epileptic Seizure Detection Using Integrated Decomposed Features from EEG Signal"</div>
+            <div><span class="font-semibold">🎙️ EICT 2023</span><br/>"Machine Learning based Epileptic Seizure Detection from EEG Signal: Bangladesh Perspective"</div>
+            <div><span class="font-semibold">📡 BECITHCON 2025 (Accepted)</span><br/>"Epileptic Seizure Detection from EEG Using Rank-Based Channel Selection and Neural Networks"</div>
+          </div>
+          <div class="mt-5 pt-3 border-t border-dashed border-gray-200">
+            <a href="https://scholar.google.com/citations?user=0chVO5gAAAAJ&hl=en" target="_blank" class="text-indigo-600 text-sm flex items-center gap-1 hover:underline">View full profile on Google Scholar <i data-lucide="arrow-up-right" class="w-3 h-3"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Research achievements / grants / honors -->
+      <div class="mt-8 flex flex-wrap gap-5 justify-between items-center bg-indigo-50/40 rounded-2xl p-5 border border-indigo-100">
+        <div class="flex items-center gap-3"><i data-lucide="trophy" class="w-6 h-6 text-amber-500"></i><span class="font-medium">Dean's List Award (2019-20)</span></div>
+        <div class="flex items-center gap-3"><i data-lucide="medal" class="w-6 h-6 text-indigo-500"></i><span class="font-medium">University Merit Scholarship (4 consecutive years)</span></div>
+        <div class="flex items-center gap-3"><i data-lucide="users" class="w-6 h-6 text-purple-500"></i><span class="font-medium">Collaboration: KUET & local hospitals</span></div>
+      </div>
+    </div>
+
+    <!-- Engineering Experience (secondary role, still present but after research) -->
+    <div id="experience" class="mb-20 scroll-mt-20">
+      <div class="flex items-center gap-3 mb-6">
+        <i data-lucide="briefcase" class="w-6 h-6 text-gray-500"></i>
+        <h2 class="text-2xl font-bold text-gray-800">Software Engineering Experience</h2>
+        <div class="h-px flex-1 bg-gray-200"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-xl border border-gray-200 p-5 hover:shadow-md transition">
+          <h3 class="text-lg font-bold flex justify-between">Senior Software Engineer <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded-full">2025–Present</span></h3>
+          <p class="text-indigo-600 text-sm">Steadfast Courier LTD</p>
+          <p class="text-sm text-gray-600 mt-2">Microservices for Packerly Play (Reels/Live streaming), payment gateway development.</p>
+        </div>
+        <div class="bg-white rounded-xl border border-gray-200 p-5 hover:shadow-md transition">
+          <h3 class="text-lg font-bold flex justify-between">Software Engineer <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full">2024–2026</span></h3>
+          <p class="text-indigo-600 text-sm">Dotlines Technologies LTD</p>
+          <p class="text-sm text-gray-600 mt-2">Catena CRM (REST APIs, analytics), Audra Sales Platform, PSIRT security, CLTP logistics.</p>
+          <div class="flex flex-wrap gap-1 mt-2"><span class="text-xs bg-gray-100 px-2 py-0.5 rounded">Laravel</span><span class="text-xs bg-gray-100 px-2 py-0.5 rounded">Vue.js</span><span class="text-xs bg-gray-100 px-2 py-0.5 rounded">MySQL/Elasticsearch</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Academic Projects + Tools (clean) -->
+    <div class="grid lg:grid-cols-3 gap-8 mb-20">
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-2 mb-4">
+          <i data-lucide="code-2" class="w-5 h-5 text-emerald-600"></i>
+          <h2 class="text-xl font-bold">Selected Academic & AI Projects</h2>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-3">
+          <div class="bg-white rounded-xl border p-4"><i data-lucide="gamepad-2" class="text-purple-500 mb-1 w-5"></i><h3 class="font-semibold">Find4 AI Game</h3><p class="text-xs text-gray-500">Human vs AI · Python, PyGame</p></div>
+          <div class="bg-white rounded-xl border p-4"><i data-lucide="film" class="text-rose-500 mb-1 w-5"></i><h3 class="font-semibold">Fun Fair 2022</h3><p class="text-xs text-gray-500">OpenGL, bird's-eye, texture mapping</p></div>
+          <div class="bg-white rounded-xl border p-4"><i data-lucide="shopping-cart" class="text-amber-600 mb-1 w-5"></i><h3 class="font-semibold">XNOGB Book Rental</h3><p class="text-xs text-gray-500">PHP, MySQL, web-based</p></div>
+          <div class="bg-white rounded-xl border p-4"><i data-lucide="heart" class="text-red-500 mb-1 w-5"></i><h3 class="font-semibold">Search for Blood</h3><p class="text-xs text-gray-500">Android · Java, Firebase</p></div>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-2 mb-4"><i data-lucide="cpu" class="w-5 h-5 text-gray-700"></i><h2 class="text-xl font-bold">Technical Skills</h2></div>
+        <div class="bg-white rounded-xl border p-5 space-y-3">
+          <div><span class="font-semibold text-indigo-700">ML/DL:</span> Keras, Scikit-learn, CNN, EMD, Neural Networks</div>
+          <div><span class="font-semibold text-indigo-700">Languages:</span> Python, PHP, JavaScript, C++, MATLAB</div>
+          <div><span class="font-semibold text-indigo-700">Backend/Cloud:</span> Laravel, Vue, AWS (S3/Lambda), Linux, Elasticsearch</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- More research emphasis: code & data mention -->
+    <div class="mb-16 p-6 bg-gradient-to-r from-indigo-50/80 to-purple-50/80 rounded-2xl border border-indigo-200 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex gap-3 items-center"><i data-lucide="github" class="w-8 h-8 text-gray-800"></i><div><p class="font-bold">Open Research & Code</p><p class="text-sm text-gray-600">EEG seizure detection models, decomposition pipelines available on GitHub.</p></div></div>
+      <a href="https://github.com/Shupta-das" target="_blank" class="bg-gray-800 text-white px-5 py-2 rounded-xl text-sm flex items-center gap-2 hover:bg-gray-700 transition">Explore repositories <i data-lucide="external-link" class="w-3 h-3"></i></a>
+    </div>
+
+    <!-- Footer with all research links again -->
+    <footer class="mt-12 pt-6 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+      <div>© 2025 Shupta Das — AI Researcher | Biomedical EEG | Deep Learning</div>
+      <div class="flex gap-5">
+        <a href="https://scholar.google.com/citations?user=0chVO5gAAAAJ&hl=en" target="_blank" class="hover:text-indigo-600 flex items-center gap-1"><i data-lucide="graduation-cap" class="w-4 h-4"></i>Scholar</a>
+        <a href="https://www.researchgate.net/profile/Shupta-Das" target="_blank" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="book-open" class="w-4 h-4"></i>RG</a>
+        <a href="https://github.com/Shupta-das" target="_blank" class="hover:text-gray-800 flex items-center gap-1"><i data-lucide="github" class="w-4 h-4"></i>GitHub</a>
+        <a href="https://www.linkedin.com/in/shupta-das" target="_blank" class="hover:text-sky-600 flex items-center gap-1"><i data-lucide="linkedin" class="w-4 h-4"></i>LinkedIn</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    lucide.createIcons();
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === "#" || href === "") return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
