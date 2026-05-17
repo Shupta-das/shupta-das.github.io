@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Shupta Das · Senior Software Engineer & Researcher</title>
+  <!-- Tailwind CSS + basic interceptor -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts (Inter & Space Grotesk for modern touch) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Custom overrides for smooth UX -->
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      scroll-behavior: smooth;
+      background: #fafcff;
+    }
+    h1, h2, h3, .font-display {
+      font-family: 'Space Grotesk', 'Inter', sans-serif;
+    }
+    .gradient-border {
+      background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
+    }
+    .hover-lift {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .hover-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -12px rgba(0,0,0,0.1);
+    }
+    .card-glass {
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(2px);
+    }
+    ::selection {
+      background: #8b5cf6;
+      color: white;
+    }
+  </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+  <!-- Navigation (simple & modern) -->
+  <nav class="sticky top-0 z-30 bg-white/80 backdrop-blur-md border-b border-gray-200/60 shadow-sm">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-3 flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center shadow-md">
+          <span class="text-white text-sm font-bold">SD</span>
+        </div>
+        <span class="font-bold text-xl tracking-tight bg-gradient-to-r from-indigo-700 to-purple-700 bg-clip-text text-transparent">Shupta Das</span>
+      </div>
+      <div class="flex gap-5 text-sm font-medium text-gray-600">
+        <a href="#experience" class="hover:text-indigo-600 transition">Work</a>
+        <a href="#research" class="hover:text-indigo-600 transition">Research</a>
+        <a href="#projects" class="hover:text-indigo-600 transition">Projects</a>
+        <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-5 sm:px-8 py-8 md:py-12">
+    <!-- Hero Section + brief -->
+    <div class="flex flex-col md:flex-row justify-between gap-10 items-start mb-16">
+      <div class="flex-1 space-y-5">
+        <div class="inline-flex items-center gap-2 bg-indigo-50 rounded-full px-4 py-1.5 text-indigo-700 text-sm font-medium border border-indigo-100">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-500 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-600"></span>
+          </span>
+          Open for collaborations
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.2]">
+          <span class="bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">Shupta Das</span><br/>
+          <span class="text-indigo-600">Senior Software Engineer</span> <span class="text-gray-500">&</span> <span class="text-purple-600">AI Researcher</span>
+        </h1>
+        <p class="text-lg text-gray-600 max-w-2xl leading-relaxed">
+          Building microservices, payment systems & deep learning solutions for epilepsy detection. 
+          Award-winning engineer with 99.8% accuracy breakthrough on EEG seizure detection.
+        </p>
+        <div class="flex flex-wrap gap-3 pt-2">
+          <a href="#research" class="bg-gray-900 hover:bg-gray-800 text-white px-5 py-2.5 rounded-xl transition-all shadow-md text-sm font-medium flex items-center gap-2">
+            <i data-lucide="file-search" class="w-4 h-4"></i> Publications
+          </a>
+          <a href="#contact" class="border border-gray-300 bg-white hover:bg-gray-50 px-5 py-2.5 rounded-xl transition text-gray-800 text-sm font-medium flex items-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4"></i> Connect
+          </a>
+          <a href="#" class="text-indigo-600 border border-indigo-200 bg-indigo-50/40 hover:bg-indigo-100 px-5 py-2.5 rounded-xl transition text-sm font-medium flex items-center gap-2">
+            <i data-lucide="github" class="w-4 h-4"></i> Codeforces
+          </a>
+        </div>
+      </div>
+      <!-- mini stats cards -->
+      <div class="flex gap-4 w-full md:w-auto">
+        <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 w-32 text-center">
+          <i data-lucide="award" class="w-7 h-7 text-indigo-500 mx-auto mb-2"></i>
+          <div class="font-black text-2xl">99.8%</div>
+          <div class="text-xs text-gray-500">Seizure detection accuracy</div>
+        </div>
+        <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 w-32 text-center">
+          <i data-lucide="graduation-cap" class="w-7 h-7 text-purple-500 mx-auto mb-2"></i>
+          <div class="font-black text-2xl">4x</div>
+          <div class="text-xs text-gray-500">Merit Scholarships</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Professional Experience -->
+    <div id="experience" class="mb-20 scroll-mt-20">
+      <div class="flex items-center gap-3 mb-6">
+        <i data-lucide="briefcase" class="w-7 h-7 text-indigo-500"></i>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Professional Experience</h2>
+        <div class="h-px flex-1 bg-gradient-to-r from-gray-200 to-transparent"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Steadfast Courier LTD -->
+        <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover-lift transition-all">
+          <div class="flex justify-between items-start flex-wrap gap-1 mb-2">
+            <h3 class="text-xl font-bold">Senior Software Engineer</h3>
+            <span class="text-xs bg-indigo-100 text-indigo-700 px-2.5 py-1 rounded-full">2025 – Present</span>
+          </div>
+          <p class="text-indigo-600 font-medium text-sm">Steadfast Courier LTD</p>
+          <ul class="mt-4 space-y-2 text-gray-600 text-sm">
+            <li class="flex gap-2"><i data-lucide="video" class="w-4 h-4 mt-0.5 text-indigo-400"></i>Develop microservices for <span class="font-medium">Packerly Play</span> (Reels & Live streaming) + payment gateway integration.</li>
+            <li class="flex gap-2"><i data-lucide="shield" class="w-4 h-4 mt-0.5 text-indigo-400"></i>Scalable backend architecture handling digital commerce & secure payments.</li>
+          </ul>
+        </div>
+        <!-- Dotlines Technologies -->
+        <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover-lift">
+          <div class="flex justify-between items-start flex-wrap gap-1 mb-2">
+            <h3 class="text-xl font-bold">Software Engineer</h3>
+            <span class="text-xs bg-purple-100 text-purple-700 px-2.5 py-1 rounded-full">Jan 2024 – Jan 2026</span>
+          </div>
+          <p class="text-indigo-600 font-medium text-sm">Dotlines Technologies LTD</p>
+          <ul class="mt-4 space-y-2 text-gray-600 text-sm">
+            <li class="flex gap-2"><i data-lucide="bar-chart-3" class="w-4 h-4 text-purple-400"></i><span><strong>Catena CRM</strong> – REST APIs, permission control, analytics dashboards, dynamic forms.</span></li>
+            <li class="flex gap-2"><i data-lucide="package" class="w-4 h-4 text-purple-400"></i><span><strong>Audra Sales Platform</strong> – Inventory mgmt, real-time stock, RBAC, CSV bulk uploads.</span></li>
+            <li class="flex gap-2"><i data-lucide="lock" class="w-4 h-4 text-purple-400"></i><span><strong>PSIRT Security</strong> – Incident tracking, secure doc uploads, issue dashboards.</span></li>
+            <li class="flex gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-purple-400"></i><span><strong>CLTP Logistic</strong> – Elasticsearch search, analytics, REST APIs.</span></li>
+          </ul>
+          <div class="flex flex-wrap gap-1 mt-3">
+            <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Laravel</span>
+            <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Vue.js</span>
+            <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">MySQL</span>
+            <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Elasticsearch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Research Experience (highlighted) -->
+    <div id="research" class="mb-20 scroll-mt-20">
+      <div class="flex items-center gap-3 mb-6">
+        <i data-lucide="brain" class="w-7 h-7 text-purple-500"></i>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Epilepsy Detection Research</h2>
+        <div class="h-px flex-1 bg-gradient-to-r from-gray-200 to-transparent"></div>
+      </div>
+      <div class="bg-gradient-to-br from-indigo-50/50 via-white to-purple-50/40 rounded-2xl p-6 border border-indigo-100 shadow-sm">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="flex-1">
+            <h3 class="text-xl font-bold flex items-center gap-2"><i data-lucide="microscope" class="w-5 h-5 text-indigo-500"></i> Undergraduate Research · KUET</h3>
+            <p class="text-gray-600 mt-2">Supervised by <span class="font-medium">Dr. Muhammad Aminul Haque Akhand</span></p>
+            <ul class="mt-4 space-y-3 text-gray-700">
+              <li class="flex gap-3"><span class="text-indigo-500 font-bold">•</span> CNN-based model using EMD-decomposed EEG → <span class="font-semibold">99.78%</span> accuracy (CHB-MIT) and <span class="font-semibold">95.26%</span> on real hospital data (Khulna, Bangladesh).</li>
+              <li class="flex gap-3"><span class="text-indigo-500 font-bold">•</span> Bangladesh perspective real-world EEG preprocessing → <span class="font-semibold">91.05%</span> accuracy, demonstrating clinical applicability.</li>
+              <li class="flex gap-3"><span class="text-indigo-500 font-bold">•</span> Integrated feature classification with fluctuation index, variance, ellipse area → <span class="font-semibold">99.80%</span> benchmark accuracy.</li>
+            </ul>
+            <div class="flex gap-3 mt-5 flex-wrap">
+              <span class="bg-white border border-indigo-200 text-indigo-700 text-xs px-3 py-1.5 rounded-full">1D/2D CNN</span>
+              <span class="bg-white border border-indigo-200 text-indigo-700 text-xs px-3 py-1.5 rounded-full">Empirical Mode Decomposition</span>
+              <span class="bg-white border border-indigo-200 text-indigo-700 text-xs px-3 py-1.5 rounded-full">EEG Signal Processing</span>
+            </div>
+          </div>
+          <div class="border-l border-indigo-200 pl-5 min-w-[180px]">
+            <p class="text-sm font-semibold text-gray-500">PUBLICATIONS</p>
+            <div class="mt-2 space-y-2">
+              <p class="text-sm"><span class="font-medium">📄 Information 2024</span> – "Epileptic Seizure Detection from Decomposed EEG Signal through 1D and 2D CNN"</p>
+              <p class="text-sm"><span class="font-medium">📘 J. Computer Science 2024</span> – Integrated decomposed features for seizure detection</p>
+              <p class="text-sm"><span class="font-medium">🎤 EICT 2023</span> – Machine learning based detection: Bangladesh perspective</p>
+              <p class="text-sm"><span class="font-medium">📡 BECITHCON 2025</span> – Rank-based channel selection (accepted)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Selected Academic Projects + Honors combo (clean grid) -->
+    <div class="grid lg:grid-cols-3 gap-8 mb-20">
+      <!-- left col: projects -->
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3 mb-5">
+          <i data-lucide="code-2" class="w-6 h-6 text-emerald-600"></i>
+          <h2 class="text-2xl font-bold">Featured Projects</h2>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-white rounded-xl border border-gray-200 p-4 hover:shadow-md transition">
+            <i data-lucide="gamepad-2" class="w-6 h-6 text-purple-500 mb-2"></i>
+            <h3 class="font-bold">Find4 AI Game</h3>
+            <p class="text-sm text-gray-500">Human vs AI 2-player connecting board game · Python, PyGame</p>
+          </div>
+          <div class="bg-white rounded-xl border border-gray-200 p-4 hover:shadow-md transition">
+            <i data-lucide="shopping-cart" class="w-6 h-6 text-amber-600 mb-2"></i>
+            <h3 class="font-bold">XNOGB – Book Rental System</h3>
+            <p class="text-sm text-gray-500">PHP, JS, MySQL – web-based old book donation & renting</p>
+          </div>
+          <div class="bg-white rounded-xl border border-gray-200 p-4 hover:shadow-md transition">
+            <i data-lucide="film" class="w-6 h-6 text-rose-500 mb-2"></i>
+            <h3 class="font-bold">Fun Fair 2022</h3>
+            <p class="text-sm text-gray-500">OpenGL graphics, bird's-eye view, texture mapping, virtual movement</p>
+          </div>
+          <div class="bg-white rounded-xl border border-gray-200 p-4 hover:shadow-md transition">
+            <i data-lucide="search" class="w-6 h-6 text-red-500 mb-2"></i>
+            <h3 class="font-bold">Search for Blood</h3>
+            <p class="text-sm text-gray-500">Android (Java/Firebase) – donor locator by blood type & region</p>
+          </div>
+          <div class="bg-white rounded-xl border border-gray-200 p-4 hover:shadow-md transition">
+            <i data-lucide="utensils" class="w-6 h-6 text-orange-500 mb-2"></i>
+            <h3 class="font-bold">Restaurant Management System</h3>
+            <p class="text-sm text-gray-500">Food ordering & customer reviews · PHP, MySQL</p>
+          </div>
+        </div>
+      </div>
+      <!-- Honors & Awards + programming activities -->
+      <div>
+        <div class="flex items-center gap-2 mb-5">
+          <i data-lucide="trophy" class="w-6 h-6 text-yellow-500"></i>
+          <h2 class="text-2xl font-bold">Honors & Awards</h2>
+        </div>
+        <div class="bg-white rounded-xl border border-gray-200 p-5 space-y-4">
+          <div class="flex gap-3"><i data-lucide="medal" class="w-5 h-5 text-indigo-500 shrink-0 mt-0.5"></i><div><span class="font-semibold">Dean’s List Award</span><p class="text-xs text-gray-500">Faculty of EEE, KUET (GPA > 3.75, 2019-20)</p></div></div>
+          <div class="flex gap-3"><i data-lucide="award" class="w-5 h-5 text-purple-500 shrink-0 mt-0.5"></i><div><span class="font-semibold">University Merit Scholarship (4x)</span><p class="text-xs text-gray-500">Consecutive semesters 2017-2021</p></div></div>
+          <div class="flex gap-3"><i data-lucide="code" class="w-5 h-5 text-gray-600 shrink-0 mt-0.5"></i><div><span class="font-semibold">Programming Activity</span><p class="text-xs text-gray-500">Codeforces: 190+ problems · Virtual Judge: 70+</p></div></div>
+          <div class="flex gap-3"><i data-lucide="globe" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i><div><span class="font-semibold">IELTS C1 (7.0)</span><p class="text-xs text-gray-500">Listening 7.5, Reading 7.5, CEFR C1 certified</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Skills + Tools -->
+    <div id="skills" class="mb-20 scroll-mt-20">
+      <div class="flex items-center gap-3 mb-6">
+        <i data-lucide="cpu" class="w-7 h-7 text-gray-700"></i>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Technical Arsenal</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-gray-50/80 rounded-2xl p-5 border border-gray-200">
+          <p class="font-semibold text-indigo-800 flex items-center gap-2"><i data-lucide="terminal" class="w-4 h-4"></i> Languages & Frameworks</p>
+          <div class="flex flex-wrap gap-2 mt-3">
+            <span class="px-3 py-1.5 bg-white rounded-xl text-sm shadow-sm">PHP / Laravel</span>
+            <span class="px-3 py-1.5 bg-white rounded-xl text-sm shadow-sm">JavaScript / Vue.js</span>
+            <span class="px-3 py-1.5 bg-white rounded-xl text-sm shadow-sm">Python (Keras, sklearn)</span>
+            <span class="px-3 py-1.5 bg-white rounded-xl text-sm shadow-sm">C/C++</span>
+            <span class="px-3 py-1.5 bg-white rounded-xl text-sm shadow-sm">MySQL / Elasticsearch</span>
+            <span class="px-3 py-1.5 bg-white rounded-xl text-sm shadow-sm">MATLAB</span>
+          </div>
+        </div>
+        <div class="bg-gray-50/80 rounded-2xl p-5 border border-gray-200">
+          <p class="font-semibold text-purple-800 flex items-center gap-2"><i data-lucide="brain-circuit" class="w-4 h-4"></i> ML & Deep Learning</p>
+          <div class="flex flex-wrap gap-2 mt-3">
+            <span class="px-3 py-1.5 bg-white rounded-xl text-sm shadow-sm">CNN / Neural Networks</span>
+            <span class="px-3 py-1.5 bg-white rounded-xl text-sm shadow-sm">Keras, Scikit-learn</span>
+            <span class="px-3 py-1.5 bg-white rounded-xl text-sm shadow-sm">Empirical Mode Decomposition</span>
+            <span class="px-3 py-1.5 bg-white rounded-xl text-sm shadow-sm">Feature Engineering</span>
+          </div>
+          <p class="font-semibold text-gray-700 mt-4 flex items-center gap-2"><i data-lucide="cloud" class="w-4 h-4"></i> DevOps & Tools</p>
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span class="px-3 py-1 bg-white rounded-xl text-xs">AWS (S3, Lambda)</span>
+            <span class="px-3 py-1 bg-white rounded-xl text-xs">Linux/Ubuntu, Nginx</span>
+            <span class="px-3 py-1 bg-white rounded-xl text-xs">Git, MobaXterm</span>
+            <span class="px-3 py-1 bg-white rounded-xl text-xs">Design Patterns (SOLID)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Publications Summary compact -->
+    <div class="mb-16 p-6 bg-white rounded-2xl border border-indigo-100 shadow-sm">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <i data-lucide="newspaper" class="w-6 h-6 text-indigo-500"></i>
+          <h3 class="text-xl font-bold">Selected Publications</h3>
+        </div>
+        <div class="text-sm text-gray-500">Google Scholar / IEEE indexed</div>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-x-6 gap-y-2 mt-4 text-sm">
+        <div class="flex gap-2"><span class="text-indigo-500">📄</span> <span>Epileptic Seizure Detection from Decomposed EEG (1D/2D CNN) – <span class="italic">Information, 2024</span></span></div>
+        <div class="flex gap-2"><span class="text-indigo-500">📘</span> <span>Integrated Decomposed Features for Seizure Detection – <span class="italic">J. Computer Science, 2024</span></span></div>
+        <div class="flex gap-2"><span class="text-indigo-500">🎙️</span> <span>Machine Learning based Detection: Bangladesh Perspective – <span class="italic">EICT 2023</span></span></div>
+        <div class="flex gap-2"><span class="text-indigo-500">🧠</span> <span>Rank-Based Channel Selection & Neural Networks – <span class="italic">BECITHCON 2025 (accepted)</span></span></div>
+      </div>
+    </div>
+
+    <!-- Connect Section (contact) -->
+    <div id="contact" class="scroll-mt-20 bg-gradient-to-r from-gray-900 to-indigo-900 rounded-3xl p-8 text-white shadow-2xl">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-5">
+        <div>
+          <h3 class="text-2xl font-bold flex items-center gap-2"><i data-lucide="inbox" class="w-6 h-6"></i> Let’s connect</h3>
+          <p class="text-indigo-200 mt-1 max-w-md">Open to research collaborations, software engineering roles, and EEG-AI innovations.</p>
+          <div class="flex gap-4 mt-4">
+            <div class="flex items-center gap-2 text-sm bg-white/10 rounded-full px-4 py-2"><i data-lucide="mail" class="w-4 h-4"></i> shupta.das@example.com</div>
+            <div class="flex items-center gap-2 text-sm bg-white/10 rounded-full px-4 py-2"><i data-lucide="linkedin" class="w-4 h-4"></i> /in/shupta-das</div>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <span class="bg-white/20 p-2 rounded-full"><i data-lucide="github" class="w-5 h-5"></i></span>
+          <span class="bg-white/20 p-2 rounded-full"><i data-lucide="twitter" class="w-5 h-5"></i></span>
+          <span class="bg-white/20 p-2 rounded-full"><i data-lucide="message-circle" class="w-5 h-5"></i></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-center text-gray-400 text-sm border-t border-gray-200 pt-8">
+      <p>© 2025 Shupta Das — Built with Tailwind & Lucide Icons. Research-driven engineering.</p>
+    </footer>
+  </main>
+
+  <!-- lucide icon initialization -->
+  <script>
+    lucide.createIcons();
+    // smooth polyfill for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === "#" || href === "") return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
