@@ -1,10 +1,10 @@
-# Farhan Sadaf — Academic Research Website
+# Shupta Das — Academic Research Website
 
 Personal academic research website.
 
 Live site:
 
-https://FarhanSadaf.github.io/
+https://shupta-das.github.io/
 
 ## Editing
 

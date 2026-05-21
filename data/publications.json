@@ -48,7 +48,7 @@
     }
   ],
   "pdfs": {
-      "pub-epileptic-seizure-information-2024": "",
+      "pub-epileptic-seizure-information-2024": "pdfs/eeg-1d-2d-cnn-mdpi.pdf",
       "pub-epileptic-seizure-jcs-2024": "pdfs/epileptic-seizure-integrated-decomposed-eeg.pdf",
       "pub-epileptic-seizure-eict-2023": "pdfs/machine-learning-seizure-detection-eeg-bangladesh.pdf",
       "pub-epileptic-seizure-becithcon-2025": "pdfs/eeg-seizure-detection-rank-channel-selection.pdf"

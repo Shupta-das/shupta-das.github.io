@@ -13,7 +13,7 @@
   },
   "bio": [
     {
-      "text": "I am an incoming PhD student and Graduate Research Assistant at Kennesaw State University. Before this, I worked as a Software Engineer specializing in microservice backends."
+      "text": "I am an incoming PhD student and Graduate Research Assistant at Kennesaw State University. Before this, I worked as a Software Engineer specializing in backends."
     }
   ],
   "socials": [
@@ -31,6 +31,11 @@
       "label": "LinkedIn",
       "url": "http://www.linkedin.com/in/shupta-das",
       "iconClass": "fa-brands fa-linkedin-in"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=0chVO5gAAAAJ&hl=en",
+      "iconClass": "ai ai-google-scholar"
     }
   ]
 }
