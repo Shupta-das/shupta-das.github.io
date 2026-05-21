@@ -5,14 +5,14 @@
       "company": "Steadfast Courier LTD",
       "url": "https://www.steadfast.com.bd/",
       "period": "February 2026 - May 2026",
-      "description": "Developed microservice-based backend components and payment gateway systems."
+      "description": "Developed microservice-based backend components for reels services."
     },
     {
       "title": "Software Engineer",
       "company": "Dotlines Technologies LTD",
       "url": "https://dotlines.com.bd/",
       "period": "January 2024 - January 2026",
-      "description": "Developed CRM, internet and device management solutions for SMBs, secure form submission modules, and tools for security incident and vulnerability tracking."
+      "description": "Catena CRM (REST APIs, analytics), Audra Sales Platform, PSIRT security, CLTP logistics."
     }
   ]
 }
