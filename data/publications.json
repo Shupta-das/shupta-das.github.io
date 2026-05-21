@@ -1,0 +1,57 @@
+{
+  "sourceUrl": "",
+  "note": "",
+  "publications": [
+    {
+      "id": "pub-epileptic-seizure-information-2024",
+      "title": "Epileptic Seizure Detection from Decomposed EEG Signal through 1D and 2D Feature Representation and Convolutional Neural Network",
+      "authors": "Shupta Das, Suraiya Akter Mumu, M. A. H. Akhand, Abdus Salam, Md Abdus Samad Kamal",
+      "venue": "Information, 2024",
+      "year": 2024,
+      "type": "journal",
+      "link": "https://doi.org/10.3390/info15050256",
+      "doi": "10.3390/info15050256",
+      "canonicalKey": "epileptic-seizure-decomposed-eeg-1d-2d"
+    },
+    {
+      "id": "pub-epileptic-seizure-jcs-2024",
+      "title": "Epileptic Seizure Detection Using Integrated Decomposed Features from EEG Signal",
+      "authors": "Shupta Das, Suraiya Akter Mumu, M. A. H. Akhand, Md Abdus Samad Kamal",
+      "venue": "Journal of Computer Science, 2024",
+      "year": 2024,
+      "type": "journal",
+      "link": "https://doi.org/10.3844/jcssp.2024.1270.1280",
+      "doi": "10.3844/jcssp.2024.1270.1280",
+      "canonicalKey": "epileptic-seizure-integrated-decomposed-eeg"
+    },
+    {
+      "id": "pub-epileptic-seizure-eict-2023",
+      "title": "Machine Learning based Epileptic Seizure Detection from EEG Signal: Bangladesh Perspective",
+      "authors": "Shupta Das, Suraiya Akter Mumu, Abdus Salam, M. A. H. Akhand",
+      "venue": "6th International Conference on Electrical Information and Communication Technology (EICT), 2023",
+      "year": 2023,
+      "type": "conference",
+      "link": "https://ieeexplore.ieee.org/abstract/document/10427701",
+      "doi": "10.1109/EICT61409.2023.10427701",
+      "canonicalKey": "machine-learning-seizure-detection-eeg-bangladesh"
+    },
+    {
+      "id": "pub-epileptic-seizure-becithcon-2025",
+      "title": "Epileptic Seizure Detection from EEG Using Rank-Based Channel Selection and Neural Networks",
+      "authors": "Suraiya Akter Mumu, Shupta Das, M. A. H. Akhand, Abdus Salam, Md Abdus Samad Kamal",
+      "venue": "IEEE International Conference on Biomedical Engineering, Computer and Information Technology for Health (BECITHCON), 2025",
+      "year": 2025,
+      "type": "conference",
+      "link": "https://ieeexplore.ieee.org/abstract/document/11504077",
+      "doi": "10.1109/BECITHCON69222.2025.11504077",
+      "canonicalKey": "eeg-seizure-detection-rank-channel-selection"
+    }
+  ],
+  "pdfs": {
+      "pub-epileptic-seizure-information-2024": "",
+      "pub-epileptic-seizure-jcs-2024": "pdfs/epileptic-seizure-integrated-decomposed-eeg.pdf",
+      "pub-epileptic-seizure-eict-2023": "pdfs/machine-learning-seizure-detection-eeg-bangladesh.pdf",
+      "pub-epileptic-seizure-becithcon-2025": "pdfs/eeg-seizure-detection-rank-channel-selection.pdf"
+  },
+  "duplicateAliases": {}
+}

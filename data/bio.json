@@ -1,0 +1,36 @@
+{
+  "name": "Shupta Das",
+  "role": "PhD Student in Computer Science",
+  "affiliation": "Kennesaw State University",
+  "email": "sdas14@students.kennesaw.edu",
+  "portrait": {
+    "src": "assets/img/profile.jpeg",
+    "alt": "Shupta Das"
+  },
+  "favicon": {
+    "src": "assets/img/logo.png",
+    "type": "image/png"
+  },
+  "bio": [
+    {
+      "text": "I am an incoming PhD student and Graduate Research Assistant at Kennesaw State University. Before this, I worked as a Software Engineer specializing in microservice backends."
+    }
+  ],
+  "socials": [
+    {
+      "label": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/Shupta-Das",
+      "iconClass": "ai ai-researchgate"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Shupta-das",
+      "iconClass": "fa-brands fa-github"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "http://www.linkedin.com/in/shupta-das",
+      "iconClass": "fa-brands fa-linkedin-in"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Shupta Das",
+  "description": "Shupta Das - academic research website.",
+  "sections": {
+    "research": "My Research",
+    "publications": "Publications",
+    "awards": "Awards",
+    "teaching": "Experience"
+  },
+  "navigation": [
+    { "label": "Home", "href": "#home" },
+    { "label": "Publications", "href": "#publications" },
+    { "label": "Experience", "href": "#experience" }
+  ]
+}
