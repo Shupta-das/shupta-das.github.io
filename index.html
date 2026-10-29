@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,12 +9,12 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261028-6" />
 </head>
 
 <body>
@@ -35,7 +35,7 @@
       <section class="hero" aria-label="Profile summary">
         <aside class="identity" id="identityBlock"></aside>
 
-        <div>
+        <div class="introduction">
           <p class="bio" id="bioText"></p>
 
           <div class="research-block" id="research">
@@ -46,32 +46,35 @@
       </section>
 
       <section class="section" id="publications">
-        <h2 id="publicationsHeading">Publications</h2>
-        <p class="publication-note" id="publicationNote"></p>
-        <div class="pub-controls" id="pubFilters" aria-label="Publication filters">
-          <button class="filter-btn is-active" type="button" data-filter="all">All</button>
-          <button class="filter-btn" type="button" data-filter="conference">Conference</button>
-          <button class="filter-btn" type="button" data-filter="journal">Journals</button>
+        <div class="section-heading">
+          <h2 id="publicationsHeading">Publications</h2>
+          <div class="pub-controls" id="pubFilters" aria-label="Publication filters">
+          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="conference" aria-pressed="false">Conference</button>
+          <button class="filter-btn" type="button" data-filter="journal" aria-pressed="false">Journals</button>
+          </div>
         </div>
-
+        <p class="publication-note" id="publicationNote"></p>
         <div id="publicationList"></div>
         <div class="status" id="publicationStatus"></div>
       </section>
 
-      <section class="section" id="awards">
-        <h2 id="awardsHeading">Awards</h2>
-        <ul class="awards" id="awardsList"></ul>
-      </section>
+      <div class="details-grid">
+        <section class="section" id="awards">
+          <h2 id="awardsHeading">Awards</h2>
+          <ul class="awards" id="awardsList"></ul>
+        </section>
 
-      <section class="section" id="experience">
-        <h2 id="teachingHeading">Experience</h2>
-        <div id="teachingList"></div>
-      </section>
+        <section class="section" id="experience">
+          <h2 id="teachingHeading">Experience</h2>
+          <div id="teachingList"></div>
+        </section>
+      </div>
     </main>
 
     <div class="bottom-rule"></div>
   </div>
 
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js?v=20261028-3" defer></script>
 </body>
 </html>

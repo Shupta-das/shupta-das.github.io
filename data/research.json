@@ -1,7 +1,7 @@
 {
   "categories": [
     {
-      "name": "Biomedical Signal Processing",
+      "name": "Physiological Signal Processing",
       "topics": [
         { "label": "Empirical Mode Decomposition of EEG", "href": "#pub-epileptic-seizure-information-2024" },
         { "label": "EEG channel selection", "href": "#pub-epileptic-seizure-becithcon-2025" }

@@ -3,6 +3,17 @@
   "note": "",
   "publications": [
     {
+      "id": "pub-epileptic-seizure-jcs-2026",
+      "title": "Epileptic Seizure Detection from EEG Signal Using Progressive Channel Selection and Deep Learning",
+      "authors": "Suraiya Akter Mumu, Shupta Das, M. A. H. Akhand, Abdus Salam, Md Abdus Samad Kamal",
+      "venue": "Journal of Computer Science, 2026",
+      "year": 2026,
+      "type": "journal",
+      "link": "https://thescipub.com/abstract/10.3844/jcssp.2026.2006.2021",
+      "doi": "10.3844/jcssp.2026.2006.2021",
+      "canonicalKey": "eeg-seizure-detection-progressive-channel-selection"
+    },
+    {
       "id": "pub-epileptic-seizure-information-2024",
       "title": "Epileptic Seizure Detection from Decomposed EEG Signal through 1D and 2D Feature Representation and Convolutional Neural Network",
       "authors": "Shupta Das, Suraiya Akter Mumu, M. A. H. Akhand, Abdus Salam, Md Abdus Samad Kamal",
@@ -48,10 +59,11 @@
     }
   ],
   "pdfs": {
-      "pub-epileptic-seizure-information-2024": "pdfs/eeg-1d-2d-cnn-mdpi.pdf",
-      "pub-epileptic-seizure-jcs-2024": "pdfs/epileptic-seizure-integrated-decomposed-eeg.pdf",
-      "pub-epileptic-seizure-eict-2023": "pdfs/machine-learning-seizure-detection-eeg-bangladesh.pdf",
-      "pub-epileptic-seizure-becithcon-2025": "pdfs/eeg-seizure-detection-rank-channel-selection.pdf"
+    "pub-epileptic-seizure-information-2024": "pdfs/eeg-1d-2d-cnn-mdpi.pdf",
+    "pub-epileptic-seizure-jcs-2024": "pdfs/epileptic-seizure-integrated-decomposed-eeg.pdf",
+    "pub-epileptic-seizure-eict-2023": "pdfs/machine-learning-seizure-detection-eeg-bangladesh.pdf",
+    "pub-epileptic-seizure-becithcon-2025": "pdfs/eeg-seizure-detection-rank-channel-selection.pdf",
+    "pub-epileptic-seizure-jcs-2026": "pdfs/eeg-seizure-detection-progressive-channel-selection.pdf"
   },
   "duplicateAliases": {}
 }

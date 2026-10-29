@@ -120,16 +120,18 @@ function renderBio(bio) {
 
   identity.innerHTML = `
     <img class="portrait" src="${htmlAttr(portrait.src || "")}" alt="${htmlAttr(portrait.alt || bio.name || "Portrait")}" />
+    <div class="identity-details">
     <p><strong>${escapeHtml(bio.role || "")}</strong></p>
     <p>${escapeHtml(bio.affiliation || "")}</p>
     ${lab.name ? `<p><a href="${htmlAttr(lab.url || "#")}">${escapeHtml(lab.name)}</a></p>` : ""}
     ${bio.email ? `<p><a href="mailto:${htmlAttr(bio.email)}">${escapeHtml(bio.email)}</a></p>` : ""}
     <div class="socials" aria-label="Academic and social links">
       ${socials.map(item => `
-        <a class="icon-btn" href="${htmlAttr(item.url)}" aria-label="${htmlAttr(item.label)}" title="${htmlAttr(item.label)}">
-          <i class="${htmlAttr(item.iconClass)}"></i>
+        <a class="icon-btn${item.text ? " icon-btn-text" : ""}" href="${htmlAttr(item.url)}" aria-label="${htmlAttr(item.label)}" title="${htmlAttr(item.label)}">
+          ${item.text ? escapeHtml(item.text) : `<i class="${htmlAttr(item.iconClass)}" aria-hidden="true"></i>`}
         </a>
       `).join("")}
+    </div>
     </div>
   `;
 
@@ -411,8 +413,12 @@ function attachPublicationInteractions() {
 function attachPublicationFilters() {
   document.querySelectorAll(".filter-btn").forEach(button => {
     button.addEventListener("click", () => {
-      document.querySelectorAll(".filter-btn").forEach(btn => btn.classList.remove("is-active"));
+      document.querySelectorAll(".filter-btn").forEach(btn => {
+        btn.classList.remove("is-active");
+        btn.setAttribute("aria-pressed", "false");
+      });
       button.classList.add("is-active");
+      button.setAttribute("aria-pressed", "true");
       renderPublications(allPublications, button.dataset.filter);
     });
   });
@@ -429,8 +435,14 @@ function attachResearchPublicationLinks() {
 
     event.preventDefault();
     const allButton = document.querySelector('[data-filter="all"]');
-    document.querySelectorAll(".filter-btn").forEach(btn => btn.classList.remove("is-active"));
-    if (allButton) allButton.classList.add("is-active");
+    document.querySelectorAll(".filter-btn").forEach(btn => {
+      btn.classList.remove("is-active");
+      btn.setAttribute("aria-pressed", "false");
+    });
+    if (allButton) {
+      allButton.classList.add("is-active");
+      allButton.setAttribute("aria-pressed", "true");
+    }
     renderPublications(allPublications, "all");
 
     const targets = targetIds
@@ -457,7 +469,7 @@ function setThemeIcon(theme) {
 
 function initTheme() {
   const button = document.getElementById("themeToggle");
-  const currentTheme = document.documentElement.getAttribute("data-theme") || "dark";
+  const currentTheme = document.documentElement.getAttribute("data-theme") || "light";
   setThemeIcon(currentTheme);
   button.addEventListener("click", () => {
     const root = document.documentElement;
